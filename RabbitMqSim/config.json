@@ -1,0 +1,70 @@
+﻿{
+	"RabbitMQ": {
+		"Connections": {
+			"Default": {
+				"HostName": "localhost",
+				"Port": 5672,
+				"UserName": "admin",
+				"Password": "123456",
+				"VirtualHost": "/"
+			}
+		},
+		"Settings": {
+			"Default": {
+				"Consumers": {
+					"Default": {
+						"RoutingKey": "eap.#",
+						"Exchange": {
+							"ExchangeName": "NRMTC.EAP.MES.SERVER",
+							"Type": "topic",
+							"Durable": true,
+							"AutoDelete": false,
+							"Arguments": {
+							}
+						},
+						"Queue": {
+							"QueueName": "eap.mes.queue",
+							"Durable": true,
+							"Exclusive": false,
+							"AutoDelete": false,
+							"Arguments": {
+								"x-dead-letter-exchange": "STool.dlx.exchange",
+								"x-dead-letter-routing-key": "eap.mes.queuedlx",
+								"x-max-priority": 10,
+								"x-message-ttl": 60000,
+								"x-queue-mode": "lazy"
+							}
+						}
+					}
+				},
+				"Producters": {
+					"Default": {
+						"RoutingKey": "ABCXYZ01",
+						"Exchange": {
+							"ExchangeName": "NRMTC.MES.EAP.ETCH",
+							"Type": "topic",
+							"Durable": true,
+							"AutoDelete": false,
+							"Arguments": {
+
+							}
+						},
+						"Queue": {
+							"QueueName": "NRMTC.MES.EAP.ABCXYZ01",
+							"Durable": true,
+							"Exclusive": false,
+							"AutoDelete": false,
+							"Arguments": {
+								"x-dead-letter-exchange": "mes.eap.dlexchange",
+								"x-dead-letter-routing-key": "timeout",
+								"x-max-priority": 10,
+								"x-message-ttl": 10000,
+								"x-queue-mode": "lazy"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

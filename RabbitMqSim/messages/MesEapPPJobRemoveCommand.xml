@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <MESSAGENAME>MesEapPPJobRemoveCommand</MESSAGENAME>
+    <TRANSACTIONID>bf50899da6024b1dadftbs1eddadcc31</TRANSACTIONID>
+    <TIMESTAMP>20230905083851052</TIMESTAMP>
+    <TTLCALLBACK />
+    <EVENTUSER />
+    <ROUTINGKEY />
+    <SENDEXCHANGE />
+    <SOURCESUBJECTNAME />
+    <TARGETSUBJECTNAME />
+    <FACTORYNAME />
+  </Header>
+  <Body>
+     <MACHINENAME>asd</MACHINENAME>
+	 <PPJOBID>test</PPJOBID>
+  </Body>
+</Message>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <MESSAGENAME>MesEapCancelCarrierCommand</MESSAGENAME>
+    <TRANSACTIONID>bf50899da6024b1dadf8bf1edd2dcd16</TRANSACTIONID>
+    <TIMESTAMP>20230905083851052</TIMESTAMP>
+    <TTLCALLBACK />
+    <EVENTUSER />
+    <ROUTINGKEY />
+    <SENDEXCHANGE />
+    <SOURCESUBJECTNAME />
+    <TARGETSUBJECTNAME />
+    <FACTORYNAME />
+  </Header>
+  <Body>
+    <MACHINENAME>asd</MACHINENAME>
+    <PORTNAME>1</PORTNAME>
+    <PORTTYPE>PB</PORTTYPE>
+	<CARRIERNAME>test</CARRIERNAME>
+  </Body>
+</Message>

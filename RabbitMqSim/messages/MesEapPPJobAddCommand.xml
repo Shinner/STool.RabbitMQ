@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <MESSAGENAME>MesEapPPJobAddCommand</MESSAGENAME>
+    <TRANSACTIONID>bf50899da6025b1dadftbs1edd2dcc31</TRANSACTIONID>
+    <TIMESTAMP>20230905083851052</TIMESTAMP>
+    <TTLCALLBACK />
+    <EVENTUSER />
+    <ROUTINGKEY />
+    <SENDEXCHANGE />
+    <SOURCESUBJECTNAME />
+    <TARGETSUBJECTNAME />
+    <FACTORYNAME />
+  </Header>
+  <Body>
+     <MACHINENAME>asd</MACHINENAME>
+	 <MSFILEPATH>test</MSFILEPATH>
+  </Body>
+</Message>
